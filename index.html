@@ -64,6 +64,16 @@
       <a href="produkt2.html">Produkt 2</a>
       <a href="produkt3.html">Produkt 3</a>
     </nav>
+    <div class="search-container">
+      <form action="/action_page.php">
+        <input type="text" placeholder="Search.." name="search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+      </form>
+      <div class="slidecontainer">
+        <input type="range" min="0" max="100" value="0" class="slider" id="myRange">
+        <p><span id="demo"></span> km</p>
+      </div>
+    </div>
   </div>
 
 
@@ -79,7 +89,6 @@
         <a href="produkt2.html">Produkt 2</a>
         <a href="produkt3.html">Produkt 3</a>
       </nav>
-
     </header>
 
     <main id="main">
@@ -102,5 +111,6 @@
     </footer>
 
     <script src="js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </body>
 </html>

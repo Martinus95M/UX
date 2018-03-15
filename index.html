@@ -2,105 +2,64 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed|Mina:700" rel="stylesheet">
-    <title>Billetsalg</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/style.css" media="all">
+<link href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed|Mina:700" rel="stylesheet">
+    <title></title>
   </head>
   <body>
-    <header>
-      <!--infoboks der indeholder links til login,
-      leveringsbetingelser og kurv-->
-      <div class="infoboks">
-        <a href="#">KUNDE LOGIN</a>
-        <a href="#">LEVERINGSBETINGELSER</a>
-        <a href="#">KURV</a>
-      </div>
-      <!--Logo og navigationsbar-->
-    <div class="logo">
-      	<svg version="1.1"
-      	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
-      	 x="0px" y="0px" width="384px" height="153.6px" viewBox="0 0 384 153.6" style="enable-background:new 0 0 384 153.6;"
-      	 xml:space="preserve">
-      <defs>
-      </defs>
-      <g>
-      	<g>
-      		<path d="M26.6,39.6h-24v29.6H0V0h22.1C29,0,34.5,1.8,38.6,5.4c4.1,3.6,6.2,8.4,6.2,14.6c0,4.7-1.5,8.8-4.4,12.4
-      			c-2.9,3.5-6.7,5.7-11.2,6.6l18.5,29.6v0.7H45L26.6,39.6z M2.6,37h21.8c5.3,0,9.6-1.6,12.9-4.8c3.3-3.2,4.9-7.3,4.9-12.2
-      			c0-5.4-1.8-9.6-5.4-12.7c-3.6-3.1-8.6-4.7-14.9-4.7H2.6V37z"/>
-      		<path d="M95.9,34.9H61.2v31.8h39.5v2.6H58.6V0h42.1v2.6H61.2v29.8h34.7V34.9z"/>
-      		<path d="M174.2,48.5h-33.9l-7.7,20.7h-2.8L155.7,0h3.1l25.9,69.2h-2.8L174.2,48.5z M141.2,46h32l-16-42.9L141.2,46z"/>
-      		<path d="M218,31.9L240.3,0h3.2l-24,33.9l24.9,35.3h-3.2L218,35.9l-23.4,33.3h-3.1l24.9-35.3L192.4,0h3.2L218,31.9z"/>
-      	</g>
-      	<g>
-      		<path d="M118.4,150.1h35.5v2.6h-38.1V83.4h2.6V150.1z"/>
-      		<path d="M170.9,152.6h-2.6V83.4h2.6V152.6z"/>
-      		<path d="M211.2,145.9l1.4,4.2l1.4-4.2l23.2-62.5h2.8l-25.9,69.2h-3.1l-25.9-69.2h2.8L211.2,145.9z"/>
-      		<path d="M253.6,152.6H251V83.4h2.6V152.6z"/>
-      		<path d="M320.3,152.6h-2.6l-44.7-64.8v64.8h-2.6V83.4h2.6l44.7,64.7V83.4h2.6V152.6z"/>
-      		<path d="M384,145.2c-1.7,2.4-4.8,4.4-9.2,6c-4.4,1.6-9.2,2.4-14.4,2.4c-5.1,0-9.7-1.3-13.7-3.8c-4-2.5-7.2-6-9.4-10.6
-      			c-2.3-4.6-3.4-9.7-3.5-15.5v-11.9c0-5.7,1.1-10.8,3.3-15.3c2.2-4.5,5.3-8,9.2-10.4c4-2.5,8.4-3.7,13.4-3.7
-      			c6.9,0,12.5,1.8,16.8,5.3c4.3,3.5,6.8,8.3,7.5,14.4h-2.6c-0.9-5.5-3.2-9.7-6.9-12.7c-3.7-2.9-8.7-4.4-14.9-4.4
-      			c-7,0-12.6,2.5-16.9,7.5c-4.3,5-6.4,11.5-6.4,19.6v11c0,5.4,1,10.3,3,14.5c2,4.2,4.8,7.5,8.5,9.9s7.9,3.5,12.6,3.5
-      			c4.6,0,8.9-0.7,12.9-2c4-1.4,6.7-3,8.2-5v-20.2h-21.2v-2.6H384V145.2z"/>
-      	</g>
-      	<g>
-      		<path d="M118.4,151.8h-2.6V0.1h2.6V151.8z"/>
-      	</g>
-      </g>
-      </svg>
-      <!--burgermenu-icon-->
-    <nav class="menuopen">
-      <!--opens the slide menu-->
-      <span onclick="openNav()">&#9776;</span>
-    </nav>
-      <!--Horizontal menu til desktop-->
-    <nav class="desktopnav">
-      <a class="active" href="index.html">Forside</a>
-      <a href="om-os.html">Om os</a>
-      <a href="produkt1.html">Produkt 1</a>
-      <a href="produkt2.html">Produkt 2</a>
-      <a href="produkt3.html">Produkt 3</a>
-    </nav>
+<h1>Kommende</h1>
+    <div class="slider-frame">
+
+    <div class="btn prev"> <i class="fas fa-caret-left"></i></div>
+    <div class="btn next"> <i class="fas fa-caret-right"></i></div>
+    <div class="slider-container">
+        <div class="slide"><img src="img/kandis.jpg">17. marts - Kandis </div>
+        <div class="slide"> <img src="img/carlemil.jpg">23. marts - Carl Emil Petersen Solo</div>
+        <div class="slide"> <img src="img/julieandthe.jpg">23. marts - Julia and the basement tapes </div>
+        <div class="slide"> <img src="img/soulworkers.jpg">28. marts -  Soulworkers </div>
+        <div class="slide"> <img src="img/thecornfeds.jpg">31. marts- The Cornfeds </div>
+        <div class="slide"><img src="img/bluesbeatles.jpg">7. april - Blues Beatles</div>
+        <div class="slide"> <img src="img/underground.jpg"> 13. april - Underground</div>
+        <div class="slide"><img src="img/rocazino.jpg"> 14. april - Rocazino</div>
+    </div>
+</div>
+
+<h1>Populære</h1>
+<div class="slider-frame">
+<div class="btn prev"> <i class="fas fa-caret-left"></i></div>
+<div class="btn next"> <i class="fas fa-caret-right"></i></div>
+  <div class="slider-container">
+
+    <div class="slide"> <img src="img/carlemil.jpg">23. marts - Carl Emil Petersen Solo</div>
+    <div class="slide"><img src="img/rocazino.jpg"> 14. april - Rocazino</div>
+    <div class="slide"><img src="img/turboweekend.jpg"> 19. april - Turboweekend</div>
+    <div class="slide"><img src="img/cchegn.jpg"> 20. april - CC Hegn Metal Festival</div>
+    <div class="slide"><img src="img/vega.jpg"> 27. april - Vega Strauss Band</div>
+    <div class="slide"><img src="img/hederytmer.jpg"> 24-26. maj - Hede Rytmer 2018</div>
+    <div class="slide"><img src="img/rasmus.jpg"> 10. juni - Rasmus Seebach Familie Koncert</div>
+    <div class="slide"><img src="img/petersommer.jpg"> 19. oktober - Peter Sommer</div>
   </div>
+</div>
 
+<h1>Netop Tilføjet</h1>
+<div class="slider-frame">
+<div class="btn prev"> <i class="fas fa-caret-left"></i></div>
+<div class="btn next"> <i class="fas fa-caret-right"></i></div>
+  <div class="slider-container">
+    <div class="slide"><img src="img/mathilde.jpg"> 21. september - Mathilde Falch & band</div>
+    <div class="slide"><img src="img/hush.jpg"> 5. oktober - HUSH AKUSTISK</div>
+    <div class="slide"><img src="img/pernille.jpg"> 7. oktober - Pernille Rosendahl 2018</div>
+    <div class="slide"><img src="img/petersommer.jpg"> 19. oktober - Peter Sommer</div>
+    <div class="slide"> <img src="img/oktober.jpg">27. oktober - Oktoberfest 2018</div>
+    <div class="slide"><img src="img/hard.jpg"> 9. november - Hardinger Band 2018</div>
+    <div class="slide"><img src="img/carsten.jpg"> 17. november - Foredrag & Ølsmagning - Carsten Berthelsen</div>
+    <div class="slide"><img src="img/carpark.jpg"> 23. november - Carpark North</div>
+  </div>
+</div>
 
-
-      <!--Navigation slide menu-->
-      <nav id="mySidenav" class="sidenav">
-        <!--closebutton in right corner-->
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <!--class="active" shows with page you are on-->
-        <a class="active" href="index.html">Forside</a>
-        <a href="om-os.html">Om os</a>
-        <a href="produkt1.html">Produkt 1</a>
-        <a href="produkt2.html">Produkt 2</a>
-        <a href="produkt3.html">Produkt 3</a>
-      </nav>
-
-    </header>
-
-    <main id="main">
-      <section id="section-a" class="grid">
-
-      </section>
-      <section id="section-b" class="grid">
-
-      </section>
-      <section id="section-c" class="grid">
-
-      </section>
-      <section id="section-d" class="grid">
-
-      </section>
-    </main>
-
-    <footer id="mainfooter" class="grid">
-
-    </footer>
-
-    <script src="js/script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+<script src="js/scroll.js"></script>
   </body>
 </html>

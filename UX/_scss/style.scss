@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #333;
+  color: #fff;
+  font-size: 1.1em;
+  line-height: 1.5;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+header {
+top: 0;
+z-index: 999;
+
+}
+/*viser ikke infoboks på mobil*/
+.infoboks {
+  display: none;
+}
+/*styling af logo*/
+.logo {
+  background-color: white;
+	width: 100%;
+	height: auto;
+  padding: 20px;
+}
+
+svg {
+	width: 20%;
+	height: auto;
+}
+/*viser ikke desktop menu på mobil*/
+.desktopnav {
+  display: none;
+}
+/*Stylling for burgermenu-icon*/
+.menuopen {
+  top: 0;
+  right: 0;
+  padding: 20px;
+  font-weight: thin;
+  font-size: 20px;
+  cursor: pointer;
+  color: #000;
+}
+/*Styling for side navigation menu*/
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #000;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+/*Styling for side navigation menu links*/
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+  text-transform: uppercase;
+}
+/*This show what side you are on in the nav bar*/
+.sidenav a.active {
+  font-weight: bold;
+  color: #fff;
+}
+/*Position and styling for the close button (top right corner)*/
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 25px;
+  margin-left: 50px;
+}
+@media screen and (min-width: 640px) {
+  /*Sætter header til fixed, så når man scroller
+   forbliver den i toppen*/
+  header {
+    top: 0;
+    z-index: 999;
+  }
+  /*stylling for infoboks*/
+  .infoboks {
+    display: block;
+    padding: 10px;
+    text-align: right;
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+    font-size: 10px;
+    top: 0;
+  }
+
+  .infoboks a {
+    display: inline;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+  }
+  /*viser ikke burgermenu på desktop*/
+  .menuopen {
+    display: none;
+  }
+  /*stylling for logo på desktop*/
+  .logo {
+  	width: 100%;
+  	height: auto;
+    background: white;
+    top: 31px;
+  }
+
+  svg {
+  	width: 120px;
+  	height: auto;
+  }
+  /*stylling for menu for desktop*/
+  .desktopnav {
+    display: inline-block;
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    clear: both;
+  }
+  .desktopnav a {
+    float: left;
+    display: block;
+    color: #000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    text-transform: uppercase;
+  }
+  .desktopnav a.active {
+    text-decoration: underline;
+  }
+}

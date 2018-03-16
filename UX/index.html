@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/style.css" media="all">
+<link href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed|Mina:700" rel="stylesheet">
+    <title>Billetsalg.dk</title>
+  </head>
+  <body>
+
+    <header>
+        <!--infoboks der indeholder links til login,
+        leveringsbetingelser og kurv-->
+        <div class="infoboks">
+          <a href="#">kunde login</a>
+          <a href="#">gavekort</a>
+          <a href="#">kurv</a>
+        </div>
+        <!--Logo og navigationsbar-->
+      <div class="logo">
+        	<a href="index.html"><img src="img/logo.png" alt="logo"></a>
+        <!--burgermenu-icon-->
+      <nav class="menuopen">
+        <!--opens the slide menu-->
+        <span onclick="openNav()">&#9776;</span>
+      </nav>
+        <!--Horizontal menu til desktop-->
+      <nav class="desktopnav">
+        <a href="index.html">Kultur</a>
+        <a href="#">Musik</a>
+        <a href="#">Festivaler</a>
+        <a href="#">Comedy</a>
+        <a href="#">Sport</a>
+      </nav>
+      <div class="search-container">
+        <form action="/action_page.php">
+          <input type="text" placeholder="Search.." name="search">
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+        <div class="slidecontainer">
+          <input type="range" min="0" max="100" value="0" class="slider" id="myRange">
+          <p><span id="demo"></span> km</p>
+        </div>
+      </div>
+    </div>
+
+        <!--Navigation slide menu-->
+        <nav id="mySidenav" class="sidenav">
+          <!--closebutton in right corner-->
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <!--class="active" shows with page you are on-->
+          <a href="index.html">Kultur</a>
+          <a href="#">Musik</a>
+          <a href="#">Festivaler</a>
+          <a href="#">Comedy</a>
+          <a href="#">Sport</a>
+        </nav>
+      </header>
+<div class="wrap">
+<h1>Kommende</h1>
+    <div class="slider-frame">
+
+    <div class="btn prev"> <i class="fas fa-caret-left"></i></div>
+    <div class="btn next"> <i class="fas fa-caret-right"></i></div>
+    <div class="slider-container">
+        <div class="slide"><img src="img/kandis.jpg">17. marts - Kandis </div>
+        <div class="slide"> <img src="img/carlemil.jpg">23. marts - Carl Emil Petersen Solo</div>
+        <div class="slide"> <img src="img/julieandthe.jpg">23. marts - Julia and the basement tapes </div>
+        <div class="slide"> <img src="img/soulworkers.jpg">28. marts -  Soulworkers </div>
+        <div class="slide"> <img src="img/thecornfeds.jpg">31. marts- The Cornfeds </div>
+        <div class="slide"><img src="img/bluesbeatles.jpg">7. april - Blues Beatles</div>
+        <div class="slide"> <img src="img/underground.jpg"> 13. april - Underground</div>
+        <div class="slide"><img src="img/rocazino.jpg"> 14. april - Rocazino</div>
+    </div>
+</div>
+
+<h1>Populære</h1>
+<div class="slider-frame">
+<div class="btn prev"> <i class="fas fa-caret-left"></i></div>
+<div class="btn next"> <i class="fas fa-caret-right"></i></div>
+  <div class="slider-container">
+
+    <div class="slide"> <img src="img/carlemil.jpg">23. marts - Carl Emil Petersen Solo</div>
+    <div class="slide"><img src="img/rocazino.jpg"> 14. april - Rocazino</div>
+    <div class="slide"><img src="img/turboweekend.jpg"> 19. april - Turboweekend</div>
+    <div class="slide"><img src="img/cchegn.jpg"> 20. april - CC Hegn Metal Festival</div>
+    <div class="slide"><img src="img/vega.jpg"> 27. april - Vega Strauss Band</div>
+    <div class="slide"><img src="img/hederytmer.jpg"> 24-26. maj - Hede Rytmer 2018</div>
+    <a href="rasmus.html"><div class="slide"><img src="img/rasmus.jpg"> 10. juni - Rasmus Seebach Familie Koncert</div></a>
+    <div class="slide"><img src="img/petersommer.jpg"> 19. oktober - Peter Sommer</div>
+  </div>
+</div>
+
+<h1>Netop Tilføjet</h1>
+<div class="slider-frame">
+<div class="btn prev"> <i class="fas fa-caret-left"></i></div>
+<div class="btn next"> <i class="fas fa-caret-right"></i></div>
+  <div class="slider-container">
+    <div class="slide"><img src="img/mathilde.jpg"> 21. september - Mathilde Falch & band</div>
+    <div class="slide"><img src="img/hush.jpg"> 5. oktober - HUSH AKUSTISK</div>
+    <div class="slide"><img src="img/pernille.jpg"> 7. oktober - Pernille Rosendahl 2018</div>
+    <div class="slide"><img src="img/petersommer.jpg"> 19. oktober - Peter Sommer</div>
+    <div class="slide"> <img src="img/oktober.jpg">27. oktober - Oktoberfest 2018</div>
+    <div class="slide"><img src="img/hard.jpg"> 9. november - Hardinger Band 2018</div>
+    <div class="slide"><img src="img/carsten.jpg"> 17. november - Foredrag & Ølsmagning - Carsten Berthelsen</div>
+    <div class="slide"><img src="img/carpark.jpg"> 23. november - Carpark North</div>
+  </div>
+</div>
+</div>
+
+  <footer>
+    <div class="left">
+      <h1>Billetsalg.dk</h1>
+
+      <h3>Følg os</h3>
+      <p><a href="https://www.facebook.com/billetsalg" target="_blank"><i class="fab fa-facebook-square"></i></a>
+      <a href="https://www.linkedin.com/company/billetsalg-dk-aps/" target="_blank"><i class="fab fa-linkedin"></i></a></p>
+    </div>
+    <div class="right">
+      <h3>Information</h3>
+      <p>Om os</p>
+      <p>Kontakt os</p>
+      <p>Salg- og leveringsbetingelser</p>
+    </div>
+  </footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+<script src="JS/scroll.js"></script>
+<script src="JS/script.js"></script>
+
+  </body>
+</html>

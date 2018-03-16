@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/style.css" media="all">
+<link href="https://fonts.googleapis.com/css?family=Fira+Sans+Condensed|Mina:700" rel="stylesheet">
+    <title>Billetsalg.dk</title>
+  </head>
+  <body>
+
+    <header>
+        <!--infoboks der indeholder links til login,
+        leveringsbetingelser og kurv-->
+        <div class="infoboks">
+          <a href="#">kunde login</a>
+          <a href="#">gavekort</a>
+          <a href="#">kurv</a>
+        </div>
+        <!--Logo og navigationsbar-->
+      <div class="logo">
+        	<a href="index.html"><img src="img/logo.png" alt="logo"></a>
+        <!--burgermenu-icon-->
+      <nav class="menuopen">
+        <!--opens the slide menu-->
+        <span onclick="openNav()">&#9776;</span>
+      </nav>
+        <!--Horizontal menu til desktop-->
+      <nav class="desktopnav">
+        <a href="index.html">Kultur</a>
+        <a href="#">Musik</a>
+        <a href="#">Festivaler</a>
+        <a href="#">Comedy</a>
+        <a href="#">Sport</a>
+      </nav>
+      <div class="search-container">
+        <form action="/action_page.php">
+          <input type="text" placeholder="Search.." name="search">
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+        <div class="slidecontainer">
+          <input type="range" min="0" max="100" value="0" class="slider" id="myRange">
+          <p><span id="demo"></span> km</p>
+        </div>
+      </div>
+    </div>
+
+        <!--Navigation slide menu-->
+        <nav id="mySidenav" class="sidenav">
+          <!--closebutton in right corner-->
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <!--class="active" shows with page you are on-->
+          <a href="index.html">Kultur</a>
+          <a href="#">Musik</a>
+          <a href="#">Festivaler</a>
+          <a href="#">Comedy</a>
+          <a href="#">Sport</a>
+        </nav>
+      </header>
+
+
+      <section class="clear">
+
+      <!--Billede under header-->
+      <img class="rasmus" src="img/rasmus.jpg" alt="rasmus">
+
+      <!--tekst ved siden af billedet samt indkøbskurv-->
+      <aside>
+      <p class="overskrift">Rasmus Seebach</p>
+      <p class="tekst"> Familiekoncerten med Rasmus Seebach og Citybois afvikles på Knivholt Hovedgaard i Frederikshavn. Koncerten starter kl. 14 - og dørene åbnes kl. 13. På koncertpladsen kan der købes drikkevarer, snacks og mad til familievenlige priser. </p>
+
+      <p class="tekst">Vær opmærksom på, at der til denne koncert vil være mange børn, så husk at tage hensyn til hinanden. Det er en stå-koncert, og selvom de mindste kan have begrænset udsyn, er det ikke tilladt at have sit barn siddende på skuldrene; både pga. sikkerhed, men også af hensyn til de publikummer der står bag jer.</p>
+
+        <p class="pris">Voksen billet - DKK 350,00 ,- </p>
+        <p class="pris">Børne billet (til og med 8 år) DKK 175,00 ,-</p>
+
+      <div class="cart">
+        <a href=”#”>Køb</a>
+      </div>
+
+      </aside>
+
+      </section>
+
+      <div class="text-wrapper">
+      <p class="brodtekst"> Velkommen til den eneste familiekoncert i Vendsyssel med Rasmus Seebach og Citybois. Koncerten opleves på gårdspladsen på den enestående Knivholt Hovedgaard i Frederikshavn.  </p>
+
+      <p class="brodtekst2">
+      RASMUS SEEBACH: Sanger, sangskriver og producer Rasmus Seebach er Danmarks ubetinget største artist, og har med sine 4 studiealbums opnået større succes end nogen anden på den danske popscene. Rasmus Seebach har vundet utallige priser, og vigtigst af alt har han, med sine dansksprogede popsange, fået en plads i enhver danskers hjerte. Som liveartist, er hans shows kendt for, at være både spektakulære, kreative og helt uden sidestykke. Rasmus gør sig ekstremt umage for at give publikum den ultimative koncertoplevelse hver gang han går på scenen. </p>
+
+      <p class="brodtekst3">
+      CITYBOIS: Den danske popduo Citybois slog igennem i 2015 efter at have været igennem Blachmans forvandlingsmaskine i DR1’s underholdningsprogram X-Factor. Lige siden er det kun gået én vej for de to drenge Anthon Edwards og Thor Farlov; fremad. De har opnået en utrolig stor succes på meget kort tid, og er i dag landskendte pga. deres charmerende personligheder og mange pophits, der bl.a. har hentet inspiration fra internationale kunstnere som Drake og The Weeknd. De to unge drenge får alle pigehjerter til smelte, og deres underholdende personligheder gør dem uvurderlige at se live.</p>
+
+      </div>
+
+      <footer>
+        <div class="left">
+          <h1>Billetsalg.dk</h1>
+
+          <h3>Følg os</h3>
+          <p><a href="https://www.facebook.com/billetsalg" target="_blank"><i class="fab fa-facebook-square"></i></a>
+          <a href="https://www.linkedin.com/company/billetsalg-dk-aps/" target="_blank"><i class="fab fa-linkedin"></i></a></p>
+        </div>
+        <div class="right">
+          <h3>Information</h3>
+          <p>Om os</p>
+          <p>Kontakt os</p>
+          <p>Salg- og leveringsbetingelser</p>
+        </div>
+      </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <script src="JS/scroll.js"></script>
+    <script src="JS/script.js"></script>
+
+      </body>
+    </html>
